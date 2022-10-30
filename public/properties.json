@@ -1,0 +1,111 @@
+[
+    {
+     "state" : "Texas",
+     "city" : "Richardson",
+     "title" : "Fancy Game Room",
+     "score" : 2.6,
+     "type": "Game Room",
+     "price" : 18,
+     "description" : "Spacious and modern, a great place to have a fun with friends.",
+     "img" : "images/game_room2.jpg",
+     "amenities": "A switch console, Six joy-cons, 20+ games",
+     "id" : 1
+    },
+    {
+     "state" : "Texas",
+     "city" : "Frisco",
+     "title" : "Modern Game Room",
+     "score" : 3.5,
+     "type": "Game Room",
+     "price" : 30,
+     "description" : "Perfect for indoor sports and games",
+     "img" : "images/game_room.jpg",
+     "amenities": "tabble tennis",
+     "id" : 2
+    },
+    {
+     "state" : "Texas",
+     "city" : "Dallas",
+     "title" : "Fancy Dining Room",
+     "score" : 4.5,
+     "type": "Dining Room",
+     "price" : 29,
+     "description": "Beautiful dinning room perfect for family reunion dinner.",
+     "img" : "images/diningroom.jpg",
+     "amenities": "A dinning table for 20, A tableware set",
+     "id" : 3
+    },
+    {
+    "state" : "California",
+    "city" : "San Jose",
+    "title" : "Fancy Bedroom",
+    "score" : 4.5,
+    "type": "Bedroom",
+    "price" : 29,
+    "description" : "good! good! good!",
+    "img" : "images/bedroom.jpg",
+    "amenities": "A dinning table for 20, A tableware set",
+    "id" : 4
+    },
+    {
+    "state" : "California",
+    "city" : "Mountain View",
+    "title" : "Fancy Game Room",
+    "score" : 4.5,
+    "type": "Garage",
+    "price" : 29,
+    "description" : "good! good! good!",
+    "img" : "images/garage.jpg",
+    "amenities": "A dinning table for 20, A tableware set",
+    "id" : 5
+    },
+    {
+    "state" : "Texas",
+    "city" : "Dallas",
+    "title" : "Fancy Game Room",
+    "score" : 4.5,
+    "type": "Kitchen",
+    "price" : 29,
+    "description" : "good! good! good!",
+    "img" : "images/kitchen.jpg",
+    "amenities": "A dinning table for 20, A tableware set",
+    "id" : 6
+    },
+    {
+    "state" : "Texas",
+    "city" : "Dallas",
+    "title" : "Fancy Game Room",
+    "score" : 4.5,
+    "type": "Study Room",
+    "price" : 29,
+    "description" : "good! good! good!",
+    "img" : "images/studyroom.jpg",
+    "amenities": "A dinning table for 20, A tableware set",
+    "id" : 7
+    },
+    {
+    "state" : "Texas",
+    "city" : "Dallas",
+    "title" : "Fancy Game Room",
+    "score" : 4.5,
+    "type": "Yard",
+    "price" : 29,
+    "description" : "good! good! good!",
+    "img" : "images/yard1.jpg",
+    "amenities": "A dinning table for 20, A tableware set",
+    "id" : 8
+    },
+    {
+    "state" : "Texas",
+    "city" : "Dallas",
+    "title" : "Fancy Game Room",
+    "score" : 4.5,
+    "type": "Yard",
+    "price" : 29,
+    "description" : "good! good! good!",
+    "img" : "images/yard2.jpg",
+    "amenities": "A dinning table for 20, A tableware set",
+    "id" : 9
+    }
+
+    ]

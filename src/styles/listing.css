@@ -1,0 +1,12 @@
+body {
+    padding-top: 100px;
+}
+#menu .btn{
+    background-color: #ffffff;
+    color: #f7549d;
+    border-style: none;
+}
+#menu .btn:hover{
+    color: #8cd9d1;
+    background-color: #ffffff;
+}

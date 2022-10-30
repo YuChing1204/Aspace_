@@ -1,0 +1,27 @@
+.card .card-body .card-title .material-icons{
+    font-size:12px;
+}
+.card .card-body .card-title .rating{
+    float: right;
+    font-size: 12px;
+    color: #f7549d;
+}
+.sidebar .btn-group-sm .btn:hover{
+    background-color: #8cd9d1;
+    border-bottom: 3px solid  #f7549d;
+    color: #f7549d;
+}
+.location{
+    text-decoration: none;
+    color: #8cd9d1;
+}
+.location:hover{
+    color: #f7549d;
+}
+.price{
+    color:gray;
+    font-weight: bold;
+}
+.star{
+    height: 14px;
+}
