@@ -2,7 +2,9 @@ import React, {useState,useEffect} from 'react'
 import CardComponent from './card_component';
 import ListMenuComponent from './list_menu_component';
 import "../styles/listing.css"
-import DetailComponent from './detail_component';
+
+// import DetailComponent from './detail_component';
+import Listing_detail from './listing_detail';
 
 const ListProperties = ({properties, search}) => {
     const rows = [];
@@ -10,7 +12,7 @@ const ListProperties = ({properties, search}) => {
     // console.log(isClick)
 
     if (isClick.click && isClick.id !== -1) {
-        return <DetailComponent key={properties[isClick.id].id} properties={properties[isClick.id]} isClick={isClick} setClick={setClick}/>
+        return <Listing_detail key={properties[isClick.id].id} properties={properties[isClick.id - 1]} isClick={isClick} setClick={setClick}/>
     } else 
     {
         properties.forEach((property) =>  {

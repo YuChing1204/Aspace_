@@ -5,8 +5,8 @@ const CardComponent = (props) => {
 
   return (
     <div className="col">
-      <div className="card h-100">
-        <img onClick={() => { props.setClick({ click: true, id: props.properties.id }) }} src={props.properties.img} className="card-img-top" alt="game room"></img>
+      <div className="card h-100" onClick={() => { props.setClick({ click: true, id: props.properties.id }) }}>
+        <img src={props.properties.img} className="card-img-top" alt="game room"></img>
         <div className="card-body">
           <div className='cardhead'>
             <div className='rating'>

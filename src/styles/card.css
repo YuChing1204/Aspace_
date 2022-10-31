@@ -35,17 +35,34 @@
 
 
 /* details */
+.close-btn {
+    text-align: center;
+    float: right;
+    color: #8cd9d1;
+    background-color: #ffffff;
+    border: #ffffff;
+}
 
-.material-symbols-outlined {
-    font-size: 24px;
-    display: inline-flex;
-    vertical-align: middle;
-   
-  }
+.close-btn:hover {
+    color: #f7549d;
+
+    background-color: #ffffff;
+    border: #ffffff;
+}
+
+.close{
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .action_btn {
     text-align: center;
 }
+.heart {
+    font-size: 24px;
+    display: inline-flex;
+    vertical-align: middle;
+  }
 
 .action_btn .reserve{
     color: #8cd9d1;
@@ -88,3 +105,17 @@
     font-weight: bold;
     font-style: oblique;
 }
+
+/* listing_detail */
+
+
+
+.listing_det{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.listing_detail {
+    width: 30rem;
+}
+
