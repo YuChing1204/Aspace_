@@ -4,8 +4,9 @@ import React from 'react'
 const DetailComponent = (props) => {
     return (
         <div className="col">
-            <div className="card h-100" onClick={() => { props.setClick({ click: false, id: props.properties.id }) }}>
+            <div className="card h-100" >
                 <div className="card-body">
+                    <button onClick={() => { props.setClick({ click: false, id: props.properties.id }) }}> <span class="material-symbols-outlined">close</span></button>
                     <div className='cardhead'>
                         <div className='rating'>
                             <img src='./images/Star.png' className='star' alt='star' />

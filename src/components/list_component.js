@@ -7,39 +7,44 @@ import DetailComponent from './detail_component';
 const ListProperties = ({properties, search}) => {
     const rows = [];
     const [isClick, setClick] = useState({click: false, id:"-1"});
-    console.log(isClick)
+    // console.log(isClick)
 
-    properties.forEach((property) =>  {
-        if (search) {
-            if ( 
-                search.location &&
-                (property.city.toLowerCase().indexOf(search.location.toLowerCase()) === -1) &&
-                (property.state.toLowerCase().indexOf(search.location.toLowerCase()) === -1)
-            ) {
-                return;
-            }
-            if (
-                search.type &&
-                (property.title.toLowerCase().indexOf(search.type.toLowerCase()) === -1)
-            ) {
-                return;
-            }
-        }
-        rows.push(property);
-    });
-
-
-    return (
-        <div className="row" id="listing">
-            <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
-                {
-                    rows.map(row => {
-                        return (isClick.click && isClick.id===row.id ? <DetailComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/> :<CardComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/>)
-                    })
+    if (isClick.click && isClick.id !== -1) {
+        return <DetailComponent key={properties[isClick.id].id} properties={properties[isClick.id]} isClick={isClick} setClick={setClick}/>
+    } else 
+    {
+        properties.forEach((property) =>  {
+            if (search) {
+                if ( 
+                    search.location &&
+                    (property.city.toLowerCase().indexOf(search.location.toLowerCase()) === -1) &&
+                    (property.state.toLowerCase().indexOf(search.location.toLowerCase()) === -1)
+                ) {
+                    return;
                 }
+                if (
+                    search.type &&
+                    (property.title.toLowerCase().indexOf(search.type.toLowerCase()) === -1)
+                ) {
+                    return;
+                }
+            }
+            rows.push(property);
+        });
+
+        return (
+            <div className="row" id="listing">
+                <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                    {
+                        rows.map(row => {
+                            return <CardComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/>
+                            // return (isClick.click && isClick.id===row.id ? <DetailComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/> :<CardComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/>)
+                        })
+                    }
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 const ListComponent = ({search, setSearch}) => {
