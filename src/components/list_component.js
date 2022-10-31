@@ -31,7 +31,7 @@ const ListProperties = ({properties, search}) => {
 
     return (
         <div className="row" id="listing">
-            <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div className="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
                 {
                     rows.map(row => {
                         return (isClick.click && isClick.id===row.id ? <DetailComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/> :<CardComponent key={row.id} properties={row} isClick={isClick} setClick={setClick}/>)
