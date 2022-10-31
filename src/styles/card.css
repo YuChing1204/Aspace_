@@ -10,6 +10,12 @@
     font-weight: bold;
 }
 
+.card-button{
+    padding:0;
+    border-style: none;
+    background: none;
+}
+
 /* rating and location */
 .star{
     height: 14px;

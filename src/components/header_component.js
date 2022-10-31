@@ -56,7 +56,7 @@ const HeaderComponent = ({search, setSearch}) => {
                 <div className="row justify-content-md-center">
                     <div className="col-sm">
                         <div className="form mb-3 mt-3">
-                            <input onChange={inputLocationHandler} value={inputLocation} type="text" className="form-control" id="where" placeholder="Where to?" name="where"></input>
+                            <input onChange={inputLocationHandler} value={inputLocation} type="text" className="form-control" id="where" placeholder="Where to? (Location)" name="where"></input>
                         </div>
                     </div>
                     <div className="col-sm">
@@ -66,7 +66,7 @@ const HeaderComponent = ({search, setSearch}) => {
                     </div>
                     <div className="col-sm">
                         <div className="form mt-3 mb-3">
-                            <input onChange={inputTypeHandler} value={inputType} type="text" className="form-control" id="what" placeholder="What place?" name="what"></input>
+                            <input onChange={inputTypeHandler} value={inputType} type="text" className="form-control" id="what" placeholder="What place? (Title)" name="what"></input>
                         </div>
                     </div>
                     <div className="col-sm">

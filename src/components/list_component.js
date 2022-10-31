@@ -20,7 +20,8 @@ const ListProperties = ({properties, search}) => {
                 if ( 
                     search.location &&
                     (property.city.toLowerCase().indexOf(search.location.toLowerCase()) === -1) &&
-                    (property.state.toLowerCase().indexOf(search.location.toLowerCase()) === -1)
+                    (property.state.toLowerCase().indexOf(search.location.toLowerCase()) === -1) &&
+                    (property.title.toLowerCase().indexOf(search.location.toLowerCase()) === -1)
                 ) {
                     return;
                 }

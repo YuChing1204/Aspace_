@@ -24,7 +24,7 @@ cancel
         <p>Description <br/><span className='description'>{props.properties.description}</span></p>
         <div className='action_btn'>                    
             <button type="button" class="btn btn-outline-success reserve">Reserve</button>
-            <button type="button" class="btn btn-outline-danger save"><span class="material-symbols-outlined heart">favorite</span></button>
+            <button type="button" class="btn btn-outline-danger save"><span className="material-symbols-outlined heart">favorite</span></button>
         </div>
 
     </div>
