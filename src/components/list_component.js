@@ -6,13 +6,13 @@ import "../styles/listing.css"
 // import DetailComponent from './detail_component';
 import Listing_detail from './listing_detail';
 
-const ListProperties = ({properties, search}) => {
+const ListProperties = ({original, properties, search}) => {
     const rows = [];
     const [isClick, setClick] = useState({click: false, id:"-1"});
     // console.log(isClick)
 
     if (isClick.click && isClick.id !== -1) {
-        return <Listing_detail key={properties[isClick.id].id} properties={properties[isClick.id - 1]} isClick={isClick} setClick={setClick}/>
+        return <Listing_detail key={isClick.id} properties={original[isClick.id - 1]} isClick={isClick} setClick={setClick}/>
     } else 
     {
         properties.forEach((property) =>  {
@@ -52,6 +52,10 @@ const ListProperties = ({properties, search}) => {
 
 const ListComponent = ({search, setSearch}) => {
     // console.log(search);
+    const [filtered, setFiltered] = useState([]);
+    const [activeCategory, setActiveCategory] = useState('');
+
+
     const [data,setData]=useState([]);
     const getData=()=>{
         fetch('properties.json'
@@ -68,7 +72,9 @@ const ListComponent = ({search, setSearch}) => {
         })
         .then(function(myJson) {
             console.log(myJson);
-            setData(myJson)
+            setData(myJson);
+
+            setFiltered(myJson);
         });
     }
     useEffect(()=>{
@@ -78,8 +84,8 @@ const ListComponent = ({search, setSearch}) => {
   return (
     <div>
         <div className="container" id="housing">
-            <ListMenuComponent/>
-            <ListProperties properties={data} search={search}/>
+            <ListMenuComponent properties={data} setFiltered={setFiltered} activeCategory={activeCategory} setActiveCategory={setActiveCategory}/>
+            <ListProperties original={data} properties={filtered} search={search}/>
         </div>
     </div>
   )

@@ -11,7 +11,10 @@ body {
     background-color: #ffffff;
     color: #f7549d;
     border-style: none;
-    
+}
+
+#menu button.active {
+    color:#8cd9d1;
 }
 
 #menu .btn:hover{
